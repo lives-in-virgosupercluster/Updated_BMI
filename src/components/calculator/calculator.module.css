@@ -1,0 +1,76 @@
+.container{
+    background: #F6F5F3;
+    display: flex;
+    flex-direction: column;
+   
+  
+  
+    height: 40rem;
+    padding:2rem;
+}
+.form{
+
+}
+.label{
+    display: block;
+    width: 10rem;
+}
+.input{
+    width:10rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+     
+    border:2px solid #8b9996;
+        
+   
+    
+    font-size:1.2rem;
+}
+.inputcontainer{
+    padding:0.1rem;
+}
+.btn{
+    width:12rem;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color: #657E79;
+    color:white;
+    font-size:1rem;
+    border:none;
+
+}
+.radiocontainer{
+    padding:0.1rem;
+    display: flex;
+    margin-bottom: 0.2rem;
+}
+.radbtn{
+    margin-right:0.5rem;
+}
+.grid{
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr; /* Two rows with equal fractional height */
+  grid-template-columns: 0.11fr 0.11fr;
+   
+
+}
+.radalign{
+    display: flex;
+}
+.para{
+    width: 7rem;
+}
+.gendercontainer{
+    display: flex;
+}
+.dropdown{
+    border:none;
+    width: 10rem;
+    height:3rem;
+}
+.bottomspace{
+    margin-bottom: 0.2rem;
+}
+.radinput{
+    margin-right: 0.2rem;
+}
