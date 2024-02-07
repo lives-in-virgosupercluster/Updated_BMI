@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from "./calculator.module.css"
 import { useState } from 'react';
+import WeightChart from '../chart/WeightChart';
 
 export const Calculator = () => {
     const [ageGroup, setAgeGroup] = useState('adult'); // Default age group
@@ -11,7 +12,9 @@ export const Calculator = () => {
     const [weight, setWeight] = useState(0);
     const [childAge, setChildAge] = useState({ years: 5, months: 0 }); // Default child age
     const [gender, setGender] = useState('male'); // Default gender
-  
+    const [bmivalue,setBmiValue]=useState(null);
+    const[finalweight,setfinalWeight]=useState();
+    const[finalheight,setfinalHeight]=useState();
     const handleAgeGroupChange = (e) => {
       setAgeGroup(e.target.value);
     };
@@ -31,8 +34,32 @@ export const Calculator = () => {
     const handleGenderChange = (e) => {
       setGender(e.target.value);
     };
+    const handleSumbit=async(e)=>{
+      e.preventDefault();
+      console.log("harsh");
+
+      const response= await fetch('/api/calculate-bmi',{
+        method:'POST',
+        headers:{  
+          'Content-Type':'application/json',
+        },
+        body:JSON.stringify({weight,height,weightUnit,unit}),
+  
+       }); 
+       
+       if(response.ok){
+        const data=await response.json();
+        console.log(data);
+        setBmiValue(data.bmi);
+       // console.log(data.height);
+        setfinalHeight(data.height);
+       // console.log(finalheight);
+        setfinalWeight(data.weight);
+       }
+    }
   
     return (
+      <div className={styles.chartcalc}>
       <div className={styles.container}>
        
        
@@ -216,9 +243,21 @@ export const Calculator = () => {
             </div>
           </label>
         </div>
-        <button onClick={() => console.log({ ageGroup, childAge, height, weight, weightUnit, gender })} className={styles.btn}>
+        <button type="submit" onClick={handleSumbit} className={styles.btn}>
           Calculate
         </button>
+      </div>
+      <div className={styles.chart}>
+      {bmivalue ? (
+        <WeightChart bmiValue={bmivalue} height={finalheight} />
+      ) : (
+        <>
+        <p>Use this calculator to check your body mass index(BMI)</p>
+        <p>which can be a helpful tool in determining your weight </p>
+        <p>category. Or,you use it to calculate your child's BMI</p>
+        </>
+      )}
+        </div>
       </div>
     );
   
