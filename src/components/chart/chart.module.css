@@ -1,0 +1,118 @@
+.container{
+    display: flex;
+   margin-top:2rem;
+
+}
+.undercolor{
+    background-color: #008255;
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.underweight{
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+.healthcolor{
+    background-color: #60D1AA;
+   
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.healthy{
+    display: flex;
+    flex-direction: column;
+   
+}
+.overcolor{
+    background-color: #F59D00;
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overweight{
+    display: flex;
+    flex-direction: column;
+}
+.obesecolor{
+    background-color: #FF5C5C;
+    height: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.obese{
+    display: flex;
+    flex-direction: column;
+}
+.cursor{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 2rem;
+    border:2px solid white;
+    background-color: #008255;
+}
+.chartcont{
+   margin-top:2rem;
+    height: 25rem;
+    width: 30rem;
+    padding:1rem;
+}
+.para1{
+
+}
+.para2{
+    margin-top:3rem;
+
+}
+.para3{
+
+}
+.para4{
+    margin-top:3rem;
+}
+
+
+@media (max-width: 1024px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+    .chartcont{
+        margin-top:2rem;
+         height: 25rem;
+         width: 18rem;
+         padding:1rem;
+         margin-left:1rem;
+     }
+    
+  }
+  @media (max-width: 767px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+    .chartcont{
+        margin-top:2rem;
+         height: 25rem;
+         width: 18rem;
+         padding:1rem;
+         margin-left:1rem;
+     }
+    
+  }
+@media (max-width: 200px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+    .chartcont{
+        margin-top:2rem;
+         height: 25rem;
+         width: 18rem;
+         padding:1rem;
+         margin-left:1rem;
+     }
+    
+  }
+
+
+  

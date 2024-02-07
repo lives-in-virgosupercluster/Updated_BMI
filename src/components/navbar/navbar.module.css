@@ -17,3 +17,31 @@
 .desc p{
     font-weight: 300;
 }
+@media (max-width: 767px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+  .image{
+    display: none;
+  }
+  .title{
+    font-size: 2rem;;
+  }
+  .container{
+    width: 35rem;
+  }
+  }
+@media (max-width: 200px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+  .image{
+    display: none;
+  }
+  .title{
+    font-size: 4rem;
+  }
+  .container{
+    width: 27rem;
+  }
+  }
+
+  
+
+  
