@@ -83,6 +83,7 @@ export const Calculator = () => {
                 value={childAge.years}
                 onChange={(e) => handleChildAgeChange('years', e.target.value)}
                 className={styles.input}
+                placeholder='Years'
               />
               
               <input
@@ -90,6 +91,7 @@ export const Calculator = () => {
                 value={childAge.months}
                 onChange={(e) => handleChildAgeChange('months', e.target.value)}
                 className={styles.input}
+                placeholder='Months'
               />
            
           
@@ -143,6 +145,7 @@ export const Calculator = () => {
                 value={height.feet}
                 onChange={(e) => setHeight({ ...height, feet: e.target.value })}
                 className={styles.input}
+                placeholder='ft'
               />
            
          
@@ -152,6 +155,7 @@ export const Calculator = () => {
                 value={height.inches}
                 onChange={(e) => setHeight({ ...height, inches: e.target.value })}
                 className={styles.input}
+                placeholder='In'
               />
            
           </div>
@@ -164,6 +168,7 @@ export const Calculator = () => {
                 value={height.cm}
                 onChange={(e) => setHeight({ ...height, cm: e.target.value })}
                 className={styles.input}
+                placeholder='cm'
               />
             
           </div>

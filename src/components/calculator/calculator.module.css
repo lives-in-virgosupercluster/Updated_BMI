@@ -28,12 +28,13 @@
     align-items: center;
     
 }
-.form{
 
-}
 .label{
     display: block;
     width: 10rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .input{
     width:10rem;
@@ -42,7 +43,9 @@
      
     border:2px solid #8b9996;
         
-   
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
     
     font-size:1.2rem;
 }
@@ -87,6 +90,11 @@
     border:none;
     width: 10rem;
     height:3rem;
+    border:2px solid #8b9996;
+    font-size:1rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .bottomspace{
     margin-bottom: 0.2rem;

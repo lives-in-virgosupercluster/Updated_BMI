@@ -39,9 +39,9 @@ const WeightChart = ({bmiValue,height}) => {
   return (
    
     <div className={styles.chartcont}>
-       <h3 className={styles.para1}>Your Body Mass Index(BMI) is {bmiValue}</h3>
+       <h3 className={styles.para1}>Your Body Mass Index(BMI) is <span className={styles.text}>{bmiValue}</span></h3>
       <h3 className={styles.para2}>According to your height your weight is in the</h3>
-      <h3 className={styles.para3}>{category} Category</h3>
+      <h3 className={styles.para3}><span className={styles.text}>{category}</span> Category</h3>
       
     <div className={styles.container}>
     <div className={styles.underweight}>
