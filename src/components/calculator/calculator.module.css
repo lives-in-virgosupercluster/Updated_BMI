@@ -126,6 +126,30 @@
     
     
   }
+  @media (max-width: 2300px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+    .chart{
+        width:25rem;
+        margin:3rem;
+        margin-left:0rem;
+        flex:2;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 40rem;
+        
+    }
+    .chartcalc{
+        display: flex;
+        background: #F6F5F3;
+        height: 77rem;
+        
+    }
+    
+    
+  }
 @media (max-width: 1024px) {
     /* Your styles for screens with width less than 1024 pixels go here */
     .chart{
@@ -157,11 +181,11 @@
         background: #F6F5F3;
         height: 65rem;
         flex-direction: column;
-        width: 35rem;
+        width: 39rem;
         
     }
     .chart{
-        width: 35rem;
+        width: 38rem;
         height: 30rem;
         margin-left: 2rem;
         flex: 1 1;
@@ -187,6 +211,7 @@
     }
     
   }
+
 @media (max-width: 200px) {
     /* Your styles for screens with width less than 1024 pixels go here */
     .chartcalc{

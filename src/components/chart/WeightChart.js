@@ -16,12 +16,12 @@ const WeightChart = ({bmiValue,height}) => {
     category="Healthy"
  
   }
-  else if(bmiValue>=25 && bmiValue<=29.9){
+  else if(bmiValue>=24.9 && bmiValue<=29.9){
     category="OverWeight";
    
     
   }
-  else if(bmiValue>=30){
+  else if(bmiValue>29.9){
     category="Obese";
     
   }
