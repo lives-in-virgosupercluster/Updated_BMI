@@ -5,7 +5,7 @@
 }
 .undercolor{
     background-color: #008255;
-    height: 0.5rem;
+    height: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,13 +13,13 @@
 .underweight{
     display: flex;
     flex-direction: column;
-  
+    padding:0.1rem;
   
 }
 .healthcolor{
     background-color: #60D1AA;
    
-    height: 0.5rem;
+    height: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,11 +27,12 @@
 .healthy{
     display: flex;
     flex-direction: column;
+    padding:0.1rem;
    
 }
 .overcolor{
     background-color: #F59D00;
-    height: 0.5rem;
+    height: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,10 +40,11 @@
 .overweight{
     display: flex;
     flex-direction: column;
+    padding:0.1rem;
 }
 .obesecolor{
     background-color: #FF5C5C;
-    height: 0.5rem;
+    height: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +53,7 @@
 .obese{
     display: flex;
     flex-direction: column;
+    padding:0.1rem;
 }
 .cursor{
     height: 1rem;
@@ -66,19 +69,48 @@
     padding:1rem;
 }
 .para1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
 }
 .para2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     margin-top:3rem;
 
 }
 .para3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 
 }
 .para4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     margin-top:3rem;
 }
+.text{
+  color: #657E79;
+  font-size:2rem;
+}
+.heading{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:1rem;
+   
+}
+.range{
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    font-size:0.8rem;
 
+}
 
 @media (max-width: 1024px) {
     /* Your styles for screens with width less than 1024 pixels go here */
