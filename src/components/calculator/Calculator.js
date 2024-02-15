@@ -15,6 +15,9 @@ export const Calculator = () => {
     const [bmivalue,setBmiValue]=useState(null);
     const[finalweight,setfinalWeight]=useState();
     const[finalheight,setfinalHeight]=useState();
+    const[lowerweight,setlowerWeight]=useState();
+    const[upperWeight,setUpperWeight]=useState();
+    const[category,setcategory]=useState();
     const handleAgeGroupChange = (e) => {
       setAgeGroup(e.target.value);
     };
@@ -86,6 +89,9 @@ export const Calculator = () => {
         setfinalHeight(data.height);
        // console.log(finalheight);
         setfinalWeight(data.weight);
+        setlowerWeight(data.lower);
+        setUpperWeight(data.upper);
+        setcategory(data.category);
        }
     }
   
@@ -287,7 +293,7 @@ export const Calculator = () => {
       </div>
       <div className={styles.chart}>
       {bmivalue ? (
-        <WeightChart bmiValue={bmivalue} height={finalheight} />
+        <WeightChart bmiValue={bmivalue} height={finalheight} lower={lowerweight} upper={upperWeight} category={category} />
       ) : (
         <>
         <p>Use this calculator to check your body mass index(BMI)</p>

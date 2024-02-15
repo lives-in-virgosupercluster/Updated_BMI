@@ -2,36 +2,36 @@
 import React from 'react';
 import styles from "./chart.module.css";
 
-const WeightChart = ({bmiValue,height}) => {
+const WeightChart = ({bmiValue,height,lower,upper,category}) => {
   // BMI categories and their ranges
  
  // let height1=height;
-  let category;
-  let upper;
-  let lower;
-  if(bmiValue<18.5){
-    category="UnderWeight";
-  }
-  else if(bmiValue>=18.5 && bmiValue<=24.9){
-    category="Healthy"
+  // let category;
+  // let upper;
+  // let lower;
+  // if(bmiValue<18.5){
+  //   category="UnderWeight";
+  // }
+  // else if(bmiValue>=18.5 && bmiValue<=24.9){
+  //   category="Healthy"
  
-  }
-  else if(bmiValue>=24.9 && bmiValue<=29.9){
-    category="OverWeight";
+  // }
+  // else if(bmiValue>=24.9 && bmiValue<=29.9){
+  //   category="OverWeight";
    
     
-  }
-  else if(bmiValue>29.9){
-    category="Obese";
+  // }
+  // else if(bmiValue>29.9){
+  //   category="Obese";
     
-  }
-  //console.log(bmi);
+  // }
+  // //console.log(bmi);
   
-  lower=18.5*(height)*(height);
-  upper=24.9*(height)*(height);
-  lower=lower.toFixed(0);
-  upper=upper.toFixed(0);
-  console.log(lower);
+  // lower=18.5*(height)*(height);
+  // upper=24.9*(height)*(height);
+  // lower=lower.toFixed(0);
+  // upper=upper.toFixed(0);
+  // console.log(lower);
   
 
 
