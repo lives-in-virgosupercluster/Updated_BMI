@@ -34,9 +34,40 @@ export const Calculator = () => {
     const handleGenderChange = (e) => {
       setGender(e.target.value);
     };
-    const handleSumbit=async(e)=>{
+    const handleSubmit=async(e)=>{
       e.preventDefault();
       console.log("harsh");
+      if(weight<0 || height<0){
+        alert("weight or height cannot be negative");
+        return ;
+      }
+      if(weightUnit==="pounds"){
+        if(weight>400){
+          alert("weight in pound cannot exceed 400");
+          return ;
+        }
+      }
+      else{
+        if(weight>150){
+          alert("weight in kg cannot exceed 150");
+          return ;
+        }
+      }
+      if(unit==="feet"){
+        if(height.feet>6 || height.inches>12){
+          alert("invalid height");
+          return ;
+
+        }
+
+      }
+      else{
+        if(height.cm>200){
+          alert("invalid height");
+          return ;
+        }
+
+      }
 
       const response= await fetch('/api/calculate-bmi',{
         method:'POST',
@@ -250,7 +281,7 @@ export const Calculator = () => {
             </div>
           </label>
         </div>
-        <button type="submit" onClick={handleSumbit} className={styles.btn}>
+        <button type="submit" onClick={handleSubmit} className={styles.btn}>
           Calculate
         </button>
       </div>
