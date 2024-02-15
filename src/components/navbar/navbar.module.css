@@ -1,3 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
+@font-face {
+  font-family: 'Euclid Circular B';
+  src: url('/fonts/Euclid\ Circular\ B\ Bold.ttf Circular B Bold Italic.ttf') format('ttf');
+     
+  /* Add more source formats if needed (TTF, OTF, etc.) */
+  font-weight: normal;
+  font-style: normal;
+}
 
 .image{
     width: 5rem;
@@ -13,6 +22,10 @@
     color:white;
   
 }
+.title{
+  /* font-family: 'sans-serif'; */
+  font-family: 'Euclid Circular B';
+}
 
 .desc p{
     font-weight: 300;
@@ -26,7 +39,7 @@
     font-size: 2rem;;
   }
   .container{
-    width: 41rem;
+    width: 100vw;
   }
   }
 @media (max-width: 200px) {

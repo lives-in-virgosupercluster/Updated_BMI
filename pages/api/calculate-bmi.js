@@ -18,8 +18,7 @@ export default function handler(req, res) {
     if(unit==='cm'){
         finheight=height.cm*0.01;
     }
-   // console.log(finheight);
-   // console.log(finweight);
+  
     let bmivalue=finweight/(finheight*finheight);
    
 
