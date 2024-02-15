@@ -84,6 +84,7 @@ export const Calculator = () => {
                 onChange={(e) => handleChildAgeChange('years', e.target.value)}
                 className={styles.input}
                 placeholder='Years'
+                style={{'textAlign':'center'}}
               />
               
               <input
@@ -92,6 +93,7 @@ export const Calculator = () => {
                 onChange={(e) => handleChildAgeChange('months', e.target.value)}
                 className={styles.input}
                 placeholder='Months'
+                style={{'textAlign':'center'}}
               />
            
           

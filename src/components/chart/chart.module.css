@@ -36,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .overweight{
     display: flex;
@@ -61,6 +62,7 @@
     border-radius: 2rem;
     border:2px solid white;
     background-color: #008255;
+  
 }
 .chartcont{
    margin-top:2rem;
@@ -127,11 +129,18 @@
     /* Your styles for screens with width less than 1024 pixels go here */
     .chartcont{
         margin-top:2rem;
-         height: 25rem;
-         width: 18rem;
+         height: 50vh;
+         width: 100vw;
          padding:1rem;
          margin-left:1rem;
      }
+    
+  }
+  @media (max-width: 370px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+  .container{
+    display: none;
+  }
     
   }
 @media (max-width: 200px) {

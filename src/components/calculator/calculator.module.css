@@ -1,8 +1,9 @@
 .chartcalc{
     display: flex;
     background: #F6F5F3;
-    height: 35rem;
-}
+    /* /* height: 35rem; */
+    height: 80vh
+} 
 
 .container{
     background: #F6F5F3;
@@ -13,12 +14,12 @@
 
 
   
-    height: 25rem;
+    /* height: 25rem; */
     padding:2rem;
 }
 .chart{
-    width:50rem;
-    margin:5rem;
+    width:40rem;
+    margin:3rem;
     margin-left:15rem;
     flex:2;
     background-color: white;
@@ -26,6 +27,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 70vh;
     
 }
 
@@ -72,7 +74,7 @@
 }
 .grid{
     display: grid;
-    grid-template-rows: 0.1fr 0.1fr; /* Two rows with equal fractional height */
+    grid-template-rows: 0.1fr 0.1fr; 
   grid-template-columns: 0.11fr 0.11fr;
    
 
@@ -103,9 +105,9 @@
     margin-right: 0.2rem;
 }
 @media (max-width: 2300px) {
-    /* Your styles for screens with width less than 1024 pixels go here */
+    
     .chart{
-        width:25rem;
+        width:70vw;
         margin:3rem;
         margin-left:0rem;
         flex:2;
@@ -114,20 +116,21 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 30rem;
-        
+        height: 60vh;
+        /* height: 30rem;
+         */
     }
     .chartcalc{
         display: flex;
         background: #F6F5F3;
-        height: 35rem;
+        /* height: 35rem; */
         
     }
     
     
   }
 @media (max-width: 1200px) {
-    /* Your styles for screens with width less than 1024 pixels go here */
+  
     .chart{
         width:25rem;
         margin:3rem;
@@ -138,13 +141,14 @@
         justify-content: center;
         align-items: center;
         
-        height: 40rem;
+        /* height: 40rem; */
         
     }
     .chartcalc{
         display: flex;
         background: #F6F5F3;
-        height: 77rem;
+        /* height: 77rem; */
+        height: 100vh
         
     }
     
@@ -152,7 +156,7 @@
   }
  
 @media (max-width: 1024px) {
-    /* Your styles for screens with width less than 1024 pixels go here */
+
     .chart{
         width:25rem;
         margin:3rem;
@@ -163,31 +167,32 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 40rem;
-        
+       
+        height: 60vh;
     }
     .chartcalc{
         display: flex;
         background: #F6F5F3;
-        height: 77rem;
-        
+        /* height: 77rem; */
+        height: 80vh
     }
     
     
   }
   @media (max-width: 767px) {
-    /* Your styles for screens with width less than 1024 pixels go here */
+   
     .chartcalc{
         display: flex;
         background: #F6F5F3;
-        height: 65rem;
+        /* height: 65rem; */
         flex-direction: column;
-        width: 39rem;
+        width: 100vw;
+        height: 80vh
         
     }
     .chart{
-        width: 38rem;
-        height: 30rem;
+        width: 100vw;
+        /* height: 30rem; */
         margin-left: 2rem;
         flex: 1 1;
         background-color: white;
@@ -197,16 +202,17 @@
         flex-direction: column;
         margin: 0rem;
         word-wrap: break-word;
+        height: 70vh;
     }
     .container{
         background: #F6F5F3;
     display: flex;
     flex-direction: column;
     flex: 1 1;
-    width: 25rem;
+    
     padding-left: 0rem;
     padding-right: 0rem;
-    height: 25rem;
+    /* height: 25rem; */
     margin-left: 1rem;
        
     }
@@ -214,17 +220,18 @@
   }
 
 @media (max-width: 200px) {
-    /* Your styles for screens with width less than 1024 pixels go here */
+    
     .chartcalc{
         display: flex;
         background: #F6F5F3;
-        height: 35rem;
+        /* height: 35rem; */
         flex-direction: column;
+        height: 80vh;
         
     }
     .chart{
         width:23rem;
-        height:30rem;
+        /* height:30rem; */
         margin-left:2rem;
         flex:1;
         background-color: white;
@@ -233,6 +240,7 @@
         align-items: center;
         flex-direction: column;
         margin:0rem;
+        height: 70vh;
     }
     
   }
