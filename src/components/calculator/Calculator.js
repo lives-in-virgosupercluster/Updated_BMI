@@ -72,14 +72,19 @@ export const Calculator = () => {
 
       }
 
-      const response= await fetch('/api/calculate-bmi',{
-        method:'POST',
-        headers:{  
-          'Content-Type':'application/json',
+      const queryParams = new URLSearchParams({
+        weight,
+        height: JSON.stringify(height),
+        weightUnit,
+        unit,
+      });
+      
+      const response = await fetch(`/api/calculate-bmi?${queryParams}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        body:JSON.stringify({weight,height,weightUnit,unit}),
-  
-       }); 
+      });
        
        if(response.ok){
         const data=await response.json();
