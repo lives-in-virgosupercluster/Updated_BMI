@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Navbar } from "@/src/components/navbar/Navbar";
-import { Calculator } from "@/src/components/calculator/Calculator";
+import { Calculator } from "@/src/calculator/Calculator";
 
 const inter = Inter({ subsets: ["latin"] });
 
