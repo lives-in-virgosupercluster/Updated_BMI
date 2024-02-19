@@ -30,7 +30,7 @@
     font-size: 2rem;;
   }
   .container{
-    width: 100vw;
+   width:100vw;
   }
   }
 @media (max-width: 200px) {
