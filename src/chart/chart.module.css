@@ -113,7 +113,10 @@
     font-size:0.8rem;
 
 }
-
+.textweight{
+    color: #657E79;
+    font-size:2rem;
+}
 @media (max-width: 1024px) {
     /* Your styles for screens with width less than 1024 pixels go here */
     .chartcont{

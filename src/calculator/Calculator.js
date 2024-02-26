@@ -119,7 +119,7 @@ export const Calculator = () => {
                 value={childAge.years}
                 onChange={(e) => handleChildAgeChange("years", e.target.value)}
                 className={`${styles.input} ${styles.inputsmall}`}
-                placeholder="Years"
+             
                 
               />
                 <div className={styles.fakeYear}>months</div>
@@ -127,7 +127,7 @@ export const Calculator = () => {
                 value={childAge.months}
                 onChange={(e) => handleChildAgeChange("months", e.target.value)}
                 className={`${styles.input} ${styles.inputsmall}`}
-                placeholder="Months"
+               
               
              
               />
@@ -168,14 +168,14 @@ export const Calculator = () => {
               value={height.feet}
               onChange={(e) => setHeight({ ...height, feet: e.target.value })}
               className={`${styles.input} ${styles.inputsmall}`}
-              placeholder="ft"
+            
             />
             <div className={styles.fakeft}>ft</div>
             <input
               value={height.inches}
               onChange={(e) => setHeight({ ...height, inches: e.target.value })}
               
-              placeholder="In"
+           
               className={`${styles.input} ${styles.inputsmall}`}
             />
             <div className={styles.fakein}>in</div>
@@ -187,7 +187,7 @@ export const Calculator = () => {
               value={height.cm}
               onChange={(e) => setHeight({ ...height, cm: e.target.value })}
               // className={styles.input}
-              placeholder="cm"
+             
               className={`${styles.input} ${styles.inputbig}`}
             />
           </div>
@@ -268,11 +268,11 @@ export const Calculator = () => {
             category={category}
           />
         ) : (
-          <>
-            <p>Use this calculator to check your body mass index(BMI)</p>
-            <p>which can be a helpful tool in determining your weight </p>
-            <p>category. Or,you use it to calculate your child's BMI</p>
-          </>
+          <div className={styles.textdiv}>
+            <p className={styles.text}>Use this calculator to check your body mass index(BMI)</p>
+            <p className={styles.text}>which can be a helpful tool in determining your weight </p>
+            <p className={styles.text}>category. Or,you use it to calculate your child's BMI</p>
+          </div>
         )}
       </div>
     </div>

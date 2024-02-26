@@ -1,8 +1,9 @@
 .chartcalc{
     display: flex;
-    background: #F6F5F3;
+    /* background: #F6F5F3; */
     /* /* height: 35rem; */
-    height: 80vh
+    /* height: 80vh */
+  
 } 
 
 .container{
@@ -11,18 +12,19 @@
     flex-direction: column;
    
   flex:1;
-  margin-top:2rem;
+  padding-top:2rem;
 
 
   
     /* height: 25rem; */
     padding-left:10rem;
+    height: 90vh;
 }
 .chart{
     width:40rem;
     /* margin:3rem;
     margin-left:15rem; */
-    flex:1;
+    flex:2;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -116,14 +118,15 @@ height: 56px;
 }
 .inputcontainer{
     padding:0.1rem;
+    padding-right:0.2rem;
 }
 .btn{
-    width:12rem;
-    height: 3rem;
-    margin-top: 1rem;
+    width: 300px;
+    height: 56px;
     background-color: #657E79;
     color:white;
-    font-size:1rem;
+    font-size:1.2rem;
+    font-weight: 400;
     border:none;
 
 }
@@ -173,36 +176,50 @@ height: 56px;
 .radinput{
     margin-right: 0.2rem;
 }
+.textdiv{
+   
+   width: 494px;
+height: 96px;
+word-wrap: break-word;
+}
+.text{
+    margin:0.5rem;
+    font-weight: 500;
+}
+
 @media (max-width: 2300px) {
     
     .chart{
-        width:70vw;
+        /* width:70vw; */
         /* margin:3rem; */
         /* margin-left:0rem; */
-        flex:1;
+        flex:2;
         background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 80vh;
+        /* height: 80vh; */
         /* height: 30rem;
          */
     }
     .chartcalc{
         display: flex;
-        background: #F6F5F3;
+     
         /* height: 35rem; */
         
     }
+    .container{
+        height: 90vh;
+      }
     
     
   }
 @media (max-width: 1200px) {
   
     .chart{
-        width:25rem;
-        margin:3rem;
+        /* width:25rem; */
+       
         margin-left:0rem;
         flex:2;
         background-color: white;
@@ -215,10 +232,13 @@ height: 56px;
     }
     .chartcalc{
         display: flex;
-        background: #F6F5F3;
+       
         /* height: 77rem; */
-        height: 100vh
+        /* height: 100vh */
         
+    }
+    .container{
+      height: 100vh;
     }
     
     
@@ -227,7 +247,7 @@ height: 56px;
 @media (max-width: 1024px) {
 
     .chart{
-        width:25rem;
+        /* width:25rem; */
         margin:3rem;
         margin-left:0rem;
         flex:2;
@@ -237,13 +257,13 @@ height: 56px;
         align-items: center;
         flex-direction: column;
        
-        height: 60vh;
+        /* height: 60vh; */
     }
     .chartcalc{
         display: flex;
-        background: #F6F5F3;
+      
         /* height: 77rem; */
-        height: 80vh
+        /* height: 80vh */
     }
     .container{
         background: #F6F5F3;
@@ -259,22 +279,22 @@ height: 56px;
     }
     
   }
-  @media (max-width: 767px) {
+  @media (max-width: 860px) {
    
     .chartcalc{
         display: flex;
-        background: #F6F5F3;
+        
         /* height: 65rem; */
         flex-direction: column;
-        width: 100vw;
-        height: 80vh
+        /* width: 100vw;
+        height: 80vh */
         
     }
     .chart{
         width: 100vw;
         /* height: 30rem; */
         margin-left: 2rem;
-        flex: 1 1;
+        flex: 2;
         background-color: white;
         display: flex;
         justify-content: center;
@@ -282,19 +302,52 @@ height: 56px;
         flex-direction: column;
         margin: 0rem;
         word-wrap: break-word;
-        height: 70vh;
+        /* height: 70vh; */
     }
     .container{
         background: #F6F5F3;
     display: flex;
     flex-direction: column;
-    flex: 1 1;
+    flex: 1;
     
     padding-left: 0rem;
     padding-right: 0rem;
     /* height: 25rem; */
-    margin-left: 1rem;
+    padding-left: 1rem;
        
+    }
+    
+  }
+  @media (max-width: 500px) {
+    .container{
+       /* width: 350px; */
+    }
+    
+    .chartcalc{
+        display: flex;
+     position: absolute;
+        /* height: 35rem; */
+        flex-direction: column;
+        height: 80vh;
+        /* width: 350px; */
+        width: 100vw;
+        
+    }
+    .chart{
+       width: 100vw;
+        /* height:30rem; */
+        margin-left:2rem;
+        flex:1;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:0rem;
+        height: 70vh;
+    }
+    .textdiv{
+        width: 300px;
     }
     
   }
@@ -303,7 +356,7 @@ height: 56px;
     
     .chartcalc{
         display: flex;
-        background: #F6F5F3;
+     
         /* height: 35rem; */
         flex-direction: column;
         height: 80vh;

@@ -39,7 +39,7 @@ const WeightChart = ({ bmiValue, height, lower, upper, category }) => {
         ></CategoryGraph>
       </div>
       <h3 className={styles.para4}>
-        Your Weight should be between {lower}kgs and {upper}kgs
+        Your Weight should be between <span className={styles.textweight}>{lower} & {upper}</span>kilograms
       </h3>
     </div>
   );
