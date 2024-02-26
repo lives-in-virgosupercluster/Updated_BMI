@@ -1,3 +1,13 @@
 /* .main{
     height: 40rem;
 } */
+
+.main{
+  
+}
+@media (max-width: 500px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+  .main{
+   position: relative;
+  }
+  }

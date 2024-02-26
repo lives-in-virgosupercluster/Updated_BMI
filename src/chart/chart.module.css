@@ -113,7 +113,10 @@
     font-size:0.8rem;
 
 }
-
+.textweight{
+    color: #657E79;
+    font-size:2rem;
+}
 @media (max-width: 1024px) {
     /* Your styles for screens with width less than 1024 pixels go here */
     .chartcont{
@@ -129,14 +132,17 @@
     /* Your styles for screens with width less than 1024 pixels go here */
     .chartcont{
         margin-top:2rem;
-         height: 50vh;
+         height: 60vh;
          width: 100vw;
          padding:1rem;
          margin-left:1rem;
      }
      .para4{
         
-        margin-top:2rem;
+        margin-top:1rem;
+    }
+    .para2{
+        margin-top:1rem;
     }
     
   }

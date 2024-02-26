@@ -10,6 +10,25 @@
 }
 
 html{
-  height: 100vh;
-  background: #F6F5F3;
+  /* height: 100vh; */
+  background-color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: hide the track */
+}
+
+/* Optional: style the track if you want to show it */
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Optional: style the handle or thumb */
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+body{
+  min-height: 100vh;
+ 
 }

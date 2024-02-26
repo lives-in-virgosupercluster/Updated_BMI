@@ -33,6 +33,21 @@
    width:100vw;
   }
   }
+  @media (max-width: 500px) {
+    /* Your styles for screens with width less than 1024 pixels go here */
+  .image{
+    display: none;
+  }
+  .title{
+    font-size: 2rem;
+  }
+  .container{
+   width: 100vw;
+    justify-content: center;
+    word-wrap: break-word;
+  }
+  }
+
 @media (max-width: 200px) {
     /* Your styles for screens with width less than 1024 pixels go here */
   .image{
