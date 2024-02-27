@@ -55,6 +55,7 @@
     font-size:1.2rem;
 }
 .inputdivs{
+
     margin-bottom:1.5rem;
     position: relative;
 }
@@ -186,7 +187,47 @@ word-wrap: break-word;
     margin:0.5rem;
     font-weight: 500;
 }
-
+.errorInch{
+    color:red;
+    position: absolute;
+    top:98%;
+    font-size:12px;
+    left:10rem;
+}
+.errorFeet{
+    color:red;
+    position: absolute;
+    top:98%;
+    font-size:12px;
+    left:1rem;
+}
+.errorWeight{
+    color:red;
+    position: absolute;
+    top:100%;
+    font-size:12px;
+    left:5rem;
+}
+.gender{
+    margin-top: 1.2rem;
+}
+.errorYear{
+    color:red;
+    position: absolute;
+    top:98%;
+    font-size:12px;
+    left:1rem;
+}
+.errorMonth{
+    color:red;
+    position: absolute;
+    top:98%;
+    font-size:12px;
+    left:10rem;
+}
+.weightcontainer{
+    position: relative;
+}
 @media (max-width: 2300px) {
     
     .chart{
@@ -319,9 +360,7 @@ word-wrap: break-word;
     
   }
   @media (max-width: 500px) {
-    .container{
-       /* width: 350px; */
-    }
+  
     
     .chartcalc{
         display: flex;
