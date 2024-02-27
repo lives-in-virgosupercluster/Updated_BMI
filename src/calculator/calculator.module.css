@@ -55,6 +55,7 @@
     font-size:1.2rem;
 }
 .inputdivs{
+
     margin-bottom:1.5rem;
     position: relative;
 }
@@ -185,6 +186,30 @@ word-wrap: break-word;
 .text{
     margin:0.5rem;
     font-weight: 500;
+}
+.errorInch{
+    color:red;
+    position: absolute;
+    top:98%;
+    font-size:12px;
+    left:10rem;
+}
+.errorFeet{
+    color:red;
+    position: absolute;
+    top:98%;
+    font-size:12px;
+    left:1rem;
+}
+.errorWeight{
+    color:red;
+    position: absolute;
+    top:74%;
+    font-size:12px;
+    left:15rem;
+}
+.gender{
+    margin-top: 1.2rem;
 }
 
 @media (max-width: 2300px) {

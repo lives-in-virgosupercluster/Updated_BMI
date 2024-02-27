@@ -3,7 +3,7 @@ export default function handler(req, res) {
    // why get method?
    //The main use case for the GET method is to retrieve data from a server without changing the state of the server or the data on it
    if(method==="GET"){
-    const { weight, height, weightUnit, unit } = req.query;
+    const { weight,  weightUnit, unit,heightfeet,heightinch,heightcm } = req.query;
 
     let finweight = 0;
     let finheight = 0;
@@ -15,13 +15,13 @@ export default function handler(req, res) {
     }
 
     // Parse the height back to an object
-    const parsedHeight = JSON.parse(height);
+  
 
     if (unit === 'feet') {
-      finheight = parsedHeight.feet * 0.3048;
-      finheight += parsedHeight.inches * 0.0254;
+      finheight = heightfeet * 0.3048;
+      finheight += heightinch * 0.0254;
     } else if (unit === 'cm') {
-      finheight = parsedHeight.cm * 0.01;
+      finheight =heightcm * 0.01;
     }
 
     let bmivalue = finweight / (finheight * finheight);
