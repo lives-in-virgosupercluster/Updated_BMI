@@ -204,14 +204,30 @@ word-wrap: break-word;
 .errorWeight{
     color:red;
     position: absolute;
-    top:74%;
+    top:100%;
     font-size:12px;
-    left:15rem;
+    left:5rem;
 }
 .gender{
     margin-top: 1.2rem;
 }
-
+.errorYear{
+    color:red;
+    position: absolute;
+    top:98%;
+    font-size:12px;
+    left:1rem;
+}
+.errorMonth{
+    color:red;
+    position: absolute;
+    top:98%;
+    font-size:12px;
+    left:10rem;
+}
+.weightcontainer{
+    position: relative;
+}
 @media (max-width: 2300px) {
     
     .chart{
@@ -344,9 +360,7 @@ word-wrap: break-word;
     
   }
   @media (max-width: 500px) {
-    .container{
-       /* width: 350px; */
-    }
+  
     
     .chartcalc{
         display: flex;

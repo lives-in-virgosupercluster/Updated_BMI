@@ -23,10 +23,12 @@ export const Calculator = () => {
       agecategory:"adult",
       unit:"feet",
       gender:"male",
-      heightinch:0,
-      heightfeet:0,
-      heightcm:0,
-      weightUnit:"kilograms"
+      // heightinch:0,
+      // heightfeet:0,
+      // heightcm:0,
+      weightUnit:"kilograms",
+      // year:0,
+      // month:0,
       
     }
   })
@@ -86,7 +88,7 @@ export const Calculator = () => {
     //     return;
     //   }
     // }
-    alert(JSON.stringify(data));
+   // alert(JSON.stringify(data));
     // return ;
 
     const queryParams = new URLSearchParams({
@@ -152,9 +154,9 @@ export const Calculator = () => {
               />
               
                 <div className={styles.fakeYear}>months</div>
-                {errors.year && errors.year.type==='required' && <span className={styles.error}>This field is required</span>}
-               {errors.year && errors.year.type==='min' && <span className={styles.error}>year should be above 4</span>}
-               {errors.year && errors.year.type==='max' && <span className={styles.error}>year should be below 20</span>}
+                {errors.year && errors.year.type==='required' && <span className={styles.errorYear}>This field is required</span>}
+               {errors.year && errors.year.type==='min' && <span className={styles.errorYear}>year should be above 4</span>}
+               {errors.year && errors.year.type==='max' && <span className={styles.errorYear}>year should be below 20</span>}
               <input
                 // value={childAge.months}
                 // onChange={(e) => handleChildAgeChange("months", e.target.value)}
@@ -165,9 +167,9 @@ export const Calculator = () => {
               />
              
                <div className={styles.fakeMonth}>years</div>
-               {errors.month && errors.month.type==='required' && <span className={styles.error}>This field is required</span>}
-               {errors.month && errors.month.type==='min' && <span className={styles.error}>month should not be negative</span>}
-               {errors.month && errors.month.type==='max' && <span className={styles.error}>month should be below 13</span>}
+               {errors.month && errors.month.type==='required' && <span className={styles.errorMonth}>This field is required</span>}
+               {errors.month && errors.month.type==='min' && <span className={styles.errorMonth}>month should not be negative</span>}
+               {errors.month && errors.month.type==='max' && <span className={styles.errorMonth}>month should be below 13</span>}
             </div>
           </div>
         )}
@@ -269,7 +271,7 @@ export const Calculator = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.weightcontainer}>
           <input
             // value={weight}
             // onChange={(e) => setWeight(e.target.value)}
