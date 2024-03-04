@@ -6,13 +6,7 @@ import WeightChart from "../chart/WeightChart";
 import {useForm} from "react-hook-form";
 
 export const Calculator = () => {
-  // const [ageGroup, setAgeGroup] = useState("adult"); // Default age group
-  // const [unit, setUnit] = useState("feet"); // Default unit for height
-  // const [weightUnit, setWeightUnit] = useState("pounds"); // Default unit for weight
-  // const [height, setHeight] = useState({ feet: 0, inches: 0, cm: 0 });
-  // const [weight, setWeight] = useState(0);
-  // const [childAge, setChildAge] = useState({ years: 5, months: 0 }); // Default child age
-  // const [gender, setGender] = useState("male"); // Default gender
+
   const {
     register,
     handleSubmit,
@@ -40,56 +34,12 @@ export const Calculator = () => {
   const [lowerweight, setlowerWeight] = useState();
   const [upperWeight, setUpperWeight] = useState();
   const [category, setcategory] = useState();
-  // const handleAgeGroupChange = (e) => {
-  //   setAgeGroup(e.target.value);
-  // };
-  console.log(errors.weight);
-  // const handleUnitChange = (e) => {
-  //   setUnit(e.target.value);
-  // };
+  
 
-  // const handleWeightUnitChange = (e) => {
-  //   setWeightUnit(e.target.value);
-  // };
 
-  // const handleChildAgeChange = (field, value) => {
-  //   setChildAge({ ...childAge, [field]: value });
-  // };
-
-  // const handleGenderChange = (e) => {
-  //   setGender(e.target.value);
-  // };
   const onSubmit = async (data) => {
     
-    // console.log("harsh");
-    // if (weight < 0 || height < 0) {
-    //   alert("weight or height cannot be negative");
-    //   return;
-    // }
-    // if (weightUnit === "pounds") {
-    //   if (weight > 400) {
-    //     alert("weight in pound cannot exceed 400");
-    //     return;
-    //   }
-    // } else {
-    //   if (weight > 150) {
-    //     alert("weight in kg cannot exceed 150");
-    //     return;
-    //   }
-    // }
-    // if (unit === "feet") {
-    //   if (height.feet > 6 || height.inches > 12) {
-    //     alert("invalid height");
-    //     return;
-    //   }
-    // } else {
-    //   if (height.cm > 200) {
-    //     alert("invalid height");
-    //     return;
-    //   }
-    // }
-   // alert(JSON.stringify(data));
-    // return ;
+  
 
     const queryParams = new URLSearchParams({
       weight:data.weight,
@@ -241,7 +191,7 @@ export const Calculator = () => {
                {errors.heightcm && errors.heightcm.type==='max' && <span className={styles.error}>should be less than 201</span>}
           </div>
         )}
-        <div>
+        <div className={styles.weightcont}>
           <label className={styles.label}>
             <p className={styles.bottomspace}> Weight</p>
           </label>
