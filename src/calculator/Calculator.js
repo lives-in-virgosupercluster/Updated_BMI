@@ -4,6 +4,7 @@ import styles from "./calculator.module.css";
 import { useState } from "react";
 import WeightChart from "../chart/WeightChart";
 import {useForm} from "react-hook-form";
+import Select from "../components/select/Select";
 
 export const Calculator = () => {
 
@@ -34,7 +35,11 @@ export const Calculator = () => {
   const [lowerweight, setlowerWeight] = useState();
   const [upperWeight, setUpperWeight] = useState();
   const [category, setcategory] = useState();
-  
+  const options = [
+    { label: 'Adult (20+)', value: 'adult' },
+    { label: 'Child (5-19)', value: 'child' },
+   
+  ];
 
 
   const onSubmit = async (data) => {
@@ -79,7 +84,7 @@ export const Calculator = () => {
       <div className={styles.container}>
         <label className={`${styles.label} ${styles.inputdivs} `}>
           <p className={styles.bottomspace}> Select</p>
-          <select
+          {/* <select
             // value={watchAge}
             // onChange={handleAgeGroupChange}
             {...register("agecategory")}
@@ -87,7 +92,8 @@ export const Calculator = () => {
   >
             <option value="adult" className={styles.dropdown}>Adult (20+)</option>
             <option value="child" className={styles.dropdown}>Child (5-19)</option>
-          </select>
+          </select> */}
+          <Select options={options}  register={register('agecategory')}></Select>
         </label>
 
         {watchAge === "child" && (
