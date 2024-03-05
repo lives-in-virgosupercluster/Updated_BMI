@@ -5,21 +5,43 @@
 }
 .container{
     display: flex;
-    justify-content: space-around;
+    
     height:8rem;
     align-items: center;
     background-color: #657E79;
    
     color:white;
+    position: relative;
   
 }
+
 .title{
   /* font-family: 'sans-serif'; */
   font-family: 'Poppins';
+  
 }
+.logo{
+  position: absolute;
+  left:90%;
 
+}
+.desc{
+  padding-left:5rem;
+}
 .desc p{
     font-weight: 300;
+}
+@media (max-width: 1024px) {
+  /* Your styles for screens with width less than 1024 pixels go here */
+.desc{
+  padding-left:2rem;
+}
+}
+@media (max-width: 860px) {
+  /* Your styles for screens with width less than 1024 pixels go here */
+.desc{
+  padding-left:1rem;
+}
 }
 @media (max-width: 767px) {
     /* Your styles for screens with width less than 1024 pixels go here */
