@@ -14,7 +14,6 @@ export default function handler(req, res) {
       finweight = parseFloat(weight);
     }
 
-    // Parse the height back to an object
   
 
     if (unit === 'feet') {
