@@ -307,7 +307,7 @@ word-wrap: break-word;
 
     .chart{
         /* width:25rem; */
-        margin:3rem;
+     margin:0rem;
         margin-left:0rem;
         flex:2;
         background-color: white;
@@ -379,9 +379,23 @@ word-wrap: break-word;
         width:100%;
     }
     .inputsmall{
+    width:40%;
         
     }
+    .btn{
+        margin:auto;
+    }
+    .fakeft{
+      
+       
+        left:30%;
     
+    }
+    .fakein{
+      
+       
+        left: 70%;
+    }
   }
   @media (max-width: 500px) {
   
