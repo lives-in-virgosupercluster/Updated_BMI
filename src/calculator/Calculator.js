@@ -34,7 +34,10 @@ export const Calculator = () => {
     { label: "Child (5-19)", value: "child" },
   ];
   const customStyle = {
-    width: '100px',
+    // width: '100px',
+    color:'blue',
+    
+
     // Add more styles as needed
   };
   const onSubmit = async (data) => {
@@ -71,15 +74,16 @@ export const Calculator = () => {
 
   return (
     <div className={styles.chartcalc}>
+      <div className ={styles.calctemp}>
       <div className={styles.container}>
         <label className={`${styles.label} ${styles.inputdivs} `}>
           <p className={styles.bottomspace}> Select</p>
           
-          <Select options={options} register={register("agecategory")} ></Select>
+          <Select options={options} register={register("agecategory")} isstyle={false} ></Select>
         </label>
 
         {watchAge === "child" && (
-          <div className={styles.inputdivs}>
+          <div className={styles.inputdivs1}>
             <label className={styles.label}>Age</label>
             <div className={styles.inputcontainer}>
               <input
@@ -287,6 +291,7 @@ export const Calculator = () => {
         >
           Calculate
         </button>
+      </div>
       </div>
       <div className={styles.chart}>
         {bmivalue ? (

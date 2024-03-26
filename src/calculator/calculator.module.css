@@ -20,10 +20,11 @@
     /* padding-left:10rem; */
     /* justify-content: center;
  align-items: center; */
- padding-left:5rem;
+ 
     height: 90vh;
    
 }
+
 .chart{
     width:40rem;
     /* margin:3rem;
@@ -68,18 +69,24 @@
     
 
 }
+.inputdivs1{
+    margin-bottom:1.5rem;
+    width:100%;
+}
 .fakeMonth{
     position: absolute;
-    left: 5.5rem; /* Adjust the left position as needed */
+    /* Adjust the left position as needed */
     top: 65%;
+    left:5.5rem;
     transform: translateY(-50%);
     color: #a0a0a0; /* Adjust the color as needed */
     pointer-events: none;
 }
 .fakeYear{
     position: absolute;
-    left: 14rem; /* Adjust the left position as needed */
+  /* Adjust the left position as needed */
     top: 65%;
+    left: 14rem;
     transform: translateY(-50%);
     color: #a0a0a0; /* Adjust the color as needed */
     pointer-events: none;
@@ -129,6 +136,7 @@ height: 56px;
 .inputcontainer{
     padding:0.1rem;
     padding-right:0.2rem;
+    position: relative;
 }
 .btn{
     width: 300px;
@@ -202,14 +210,14 @@ word-wrap: break-word;
     position: absolute;
     top:98%;
     font-size:12px;
-    left:10rem;
+    left:50%;
 }
 .errorFeet{
     color:red;
     position: absolute;
     top:98%;
     font-size:12px;
-    left:1rem;
+    left:7%;
 }
 .errorWeight{
     color:red;
@@ -226,14 +234,14 @@ word-wrap: break-word;
     position: absolute;
     top:98%;
     font-size:12px;
-    left:1rem;
+    left:5%;
 }
 .errorMonth{
     color:red;
     position: absolute;
     top:98%;
     font-size:12px;
-    left:10rem;
+    left:50%;
 }
 .weightcontainer{
     position: relative;
@@ -395,6 +403,14 @@ word-wrap: break-word;
       
        
         left: 70%;
+    }
+    .fakeMonth{
+        left:23%;
+
+    }
+    .fakeYear{
+        left:62%;
+
     }
   }
   @media (max-width: 500px) {
